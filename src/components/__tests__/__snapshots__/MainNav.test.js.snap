@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainNav Component Guest User renders navigation component with Sign In when user is not logged in 1`] = `
+<div
+  className="header-main"
+>
+  <div
+    className="ui menu"
+  >
+    <a
+      className="item"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <div
+      className="item"
+      onClick={[Function]}
+    >
+      <span
+        className="moto"
+      >
+        Welcome to the app
+      </span>
+    </div>
+    <a
+      className="right item"
+      href="/user/login"
+      onClick={[Function]}
+    >
+      Sign-in
+    </a>
+  </div>
+</div>
+`;
+
+exports[`MainNav Component Logged In User - non admin renders navigation component with Username when user is logged in 1`] = `
+<div
+  className="header-main"
+>
+  <div
+    className="ui menu"
+  >
+    <a
+      className="item"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <div
+      className="item"
+      onClick={[Function]}
+    >
+      <span
+        className="moto"
+      >
+        Welcome to the app
+      </span>
+    </div>
+    <div
+      className="right item"
+      onClick={[Function]}
+    >
+      <div
+        aria-busy={undefined}
+        aria-disabled={undefined}
+        aria-expanded={false}
+        aria-multiselectable={undefined}
+        className="ui button floating labeled dropdown icon blue"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        role="listbox"
+        tabIndex={0}
+      >
+        <div
+          aria-live="polite"
+          className="text"
+          role="alert"
+        >
+          TestUser
+        </div>
+        <i
+          aria-hidden="true"
+          className="user icon"
+          onClick={[Function]}
+        />
+        <div
+          className="menu transition"
+        >
+          <div
+            aria-checked={undefined}
+            aria-disabled={undefined}
+            aria-selected={undefined}
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Logout
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

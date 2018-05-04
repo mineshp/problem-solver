@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="content-body"
+>
+  <div
+    className="ui vertical center aligned segment home-segment"
+  >
+    <div
+      className="ui text container"
+    >
+      <h2
+        className="ui header home-mainheader"
+      >
+        Welcome to the problem solver
+      </h2>
+      <div
+        className="ui inverted section divider"
+      />
+      <div />
+    </div>
+  </div>
+</div>
+`;
