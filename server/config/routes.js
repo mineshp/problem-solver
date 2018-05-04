@@ -15,6 +15,7 @@ module.exports = function (app) {
 
     app.post('/api/user/login', user.login);
     app.post('/api/user/register', user.register);
+    app.post('/api/user/password/reset', user.resetPwd);
 
     app.all('/api/*', (req,res) => {
 		res.sendStatus(404);

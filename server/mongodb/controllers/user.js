@@ -81,18 +81,18 @@ exports.login = (req, res) => {
 exports.updateUser = (req, res) => {
     const data = req.body;
     console.log('data', data);
-    User.update({ _id: req.params.id }, data, function(err, result) {
+    User.update({ _id: req.params.id }, data, function (err, result) {
         if (err) {
-			res.status(400);
-			res.json(
-				{
-					message: `Error: User update failed for id ${req.params.id}.`
-				}
-			);
-		}
-		else {
-			res.status(200);
-			res.send(data);
-		}
+            res.status(400);
+            res.json(
+                {
+                    message: `Error: User update failed for id ${req.params.id}.`
+                }
+            );
+        }
+        else {
+            res.status(200);
+            res.send(data);
+        }
     });
-}
+};
