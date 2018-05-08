@@ -1,6 +1,7 @@
 const User = require('mongoose').model('User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const uuidv4 = require('uuid/v4');
 
 const env = process.env.NODE_ENV || 'development';
 const config = require('../../config/config')[env];
@@ -75,6 +76,13 @@ exports.login = (req, res) => {
                 }
             });
         }
+    });
+};
+
+exports.resetPwd = (req, res) => {
+    res.status(200);
+    res.send({
+        newPassword: uuidv4()
     });
 };
 
